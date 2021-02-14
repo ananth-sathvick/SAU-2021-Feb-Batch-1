@@ -293,7 +293,7 @@ GROUP BY cc.category
 >Retrieve the percentage of the students along with students detailed information who has scored the highest percentage along with availing the maximum scholarship amount
 
 ```
-SELECT b.*,s.percentage
+SELECT b.*,(s.percentage)
 FROM basic_info b 
 JOIN sub_info s on s.stud_roll_no = b.roll_no
 WHERE b.roll_no IN
@@ -305,6 +305,9 @@ WHERE b.roll_no IN
         SELECT MAX(scholarship.amount)
         FROM scholarship
     )
+) AND s.percentage = 
+(
+    SELECT MAX(ss.percentage) from sub_info ss
 )
 ```
 
