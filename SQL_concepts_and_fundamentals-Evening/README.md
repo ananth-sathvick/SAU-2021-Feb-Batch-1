@@ -82,6 +82,8 @@ where b.applied_for_sc = 1 AND b.roll_no NOT IN
 ```
 ![8 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/8op.png?raw=true)
 
+>Fill in data for the percentage column i.e. StudentMarksPercentage in the table StudentSubjectInformation by creating and using the stored procedure created
+
 ```
 CREATE PROCEDURE `basic_info`()
 BEGIN
