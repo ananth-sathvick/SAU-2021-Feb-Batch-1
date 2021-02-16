@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "cd440bce-1935-4075-a278-05ae68678a68",
+		"name": "Football",
+		"description": "Stores the details of football players -:\n\n1)Player id \n2)Player name \n3)Number of goals scored in a year\n\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create football player",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"7\",\n  \"name\": \"Basmir\",\n  \"numberOfGoals\": 11\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/football",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football"
+					]
+				},
+				"description": "url -\n    http://localhost:8080/football\n\nbody -\n    {\n    \"id\": \"string\",\n    \"name\": \"string\",\n    \"numberOfGoals\": 0\n    }"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Football player by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/football/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football",
+						"1"
+					]
+				},
+				"description": "url -\n    http://localhost:8080/football/{id}\n\nwhere id is the id of the player"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete football player by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/football/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football",
+						"1"
+					]
+				},
+				"description": "url -\n    http://localhost:8080/football/{id}\n\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Get football players with goals greater than ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/football/goals/17",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"football",
+						"goals",
+						"17"
+					]
+				},
+				"description": "url -\n    http://localhost:8080/football/goals/{goal}\n\nwhere {goal} is the number of goals\n"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
