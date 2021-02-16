@@ -1,32 +1,33 @@
 > Insert more than 10 records in each and every table created
 
-```
+```SQL
 SELECT * FROM basic_info
 ````
 
 ![Basic Info](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/basic_info.png?raw=true)
 
-```
+```SQL
 SELECT * FROM sub_info
 ````
 
 ![Subject Info](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/sub_info.png?raw=true)
 
-```
+```SQL
 SELECT * FROM admission
 ````
 
 ![Admission Info](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/admission.png?raw=true)
 
-```
+```SQL
 SELECT * FROM scholarship
 ````
 
 ![Scholarship](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/scholarship.png?raw=true)
+___
 
 >Update any 5 records of your choice in any table like update the StudentAddress with some other address content and likewise so on with any records of any table of your choice
 
-```
+```SQL
 1. UPDATE `basic_info` SET `gender` = 'female' WHERE `basic_info`.`roll_no` = 658;
 
 2. UPDATE `admission` SET `amt_paid` = '304387' WHERE `admission`.`stud_roll_no` = 724;
@@ -38,42 +39,45 @@ SELECT * FROM scholarship
 5. UPDATE `basic_info` SET `address` = '51536 Russel Pine Suite 160\r\nHettingerhaven, MT 87065' WHERE `basic_info`.`roll_no` = 870;
 ```
 
-```
+```SQL
 SELECT * FROM basic_info
 ````
 
 ![Basic Info](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/basic_info_up.png?raw=true)
 
-```
+```SQL
 SELECT * FROM sub_info
 ````
 
 ![Subject Info](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/sub_info_up.png?raw=true)
 
-```
+```SQL
 SELECT * FROM admission
 ````
 
 ![Admission Info](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/admission_up.png?raw=true)
 
-```
+```SQL
 SELECT * FROM scholarship
 ````
 
 ![Scholarship](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/scholarship_up.png?raw=true)
 
+___
+
 >Select the student details records who has received the scholarship more than 5000Rs/- 
 
-```
+```SQL
 select b.*,s.amount from basic_info b
 join scholarship s on b.roll_no = s.stud_roll_no
 where s.amount > 5000
 ```
 ![7 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/7op.png?raw=true)
+___
 
 >Select the students who opted for scholarship but has not got the scholarship
 
-```
+```SQL
 select * from basic_info b
 where b.applied_for_sc = 1 AND b.roll_no NOT IN 
 (
@@ -81,10 +85,11 @@ where b.applied_for_sc = 1 AND b.roll_no NOT IN
 )
 ```
 ![8 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/8op.png?raw=true)
+___
 
 >Fill in data for the percentage column i.e. StudentMarksPercentage in the table StudentSubjectInformation by creating and using the stored procedure created
 
-```
+```SQL
 CREATE PROCEDURE `basic_info`()
 BEGIN
     UPDATE sub_info set sub_info.percentage = ( sub_info.marks_obtained / sub_info.total_marks ) * 100 , sub_info.status = case when sub_info.percentage >= 35 THEN "PASS" ELSE "FAIL" END;
@@ -93,10 +98,11 @@ END
 CALL `basic_info`();
 ```
 ![9 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/9op.png?raw=true)
+___
 
 >Decide the category of the scholarship depending upon the marks/percentage obtained by the student and likewise update the ScholarshipCategory column, create a stored procedure in order to handle this operation
 
-```
+```SQL
 CREATE PROCEDURE `sch_cat`() 
 BEGIN
 
@@ -122,9 +128,11 @@ CALL `sch_cat`();
 ```
 ![10 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/10op.png?raw=true)
 
+___
+
 >Create the View which shows balance amount to be paid by the student along with the student detailed information (use join)
 
-```
+```SQL
 CREATE VIEW balance_amount AS 
 SELECT b.* , a.balance
 from basic_info b join admission a on a.stud_roll_no = b.roll_no;
@@ -132,9 +140,10 @@ from basic_info b join admission a on a.stud_roll_no = b.roll_no;
 
 ![11 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/11op.png?raw=true)
 
+___
 >Get the details of the students who haven’t got any scholarship (use joins/subqueries)
 
-```
+```SQL
 SELECT b.* 
 FROM basic_info b
 WHERE b.roll_no NOT IN 
@@ -145,9 +154,11 @@ WHERE b.roll_no NOT IN
 
 ![12 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/12op.png?raw=true)
 
+___
+
 >Create Stored Procedure which will be return the amount balance to be paid by the student as per the student roll number passed through the stored procedure as the input
 
-```
+```SQL
 CREATE PROCEDURE get_balance (IN roll_no BIGINT UNSIGNED) 
 BEGIN
 
@@ -162,10 +173,12 @@ CALL `get_balance`(@p0);
 
 ![13 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/13op.png?raw=true)
 
+___
+
 
 >Retrieve the top five student details as per the StudentMarksPercentage values (use subqueries)
 
-```
+```SQL
 SELECT BB.*
 FROM (SELECT b.*,s.percentage
       FROM basic_info b 
@@ -176,9 +189,11 @@ LIMIT 5
 ```
 ![14 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/14op.png?raw=true)
 
+___
+
 >Try to use all the three types of join learned today in a relevant way, and explain the same why you thought of using that particular join for your selected scenarios (try to cover relevant and real time scenarios for all the three studied joins)
 
-```
+```SQL
 Cross join - To create a table which compares a particular student with every other student 
 
 SELECT * FROM sub_info s
@@ -189,13 +204,16 @@ ORDER BY s.stud_roll_no ASC
 ```
 ![15 op 1](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/15op_1.png?raw=true)
 
-```
+```SQL
 Inner join - To get details of students who have recieved scholarship
+
+SELECT * FROM basic_info b
+Inner JOIN scholarship WHERE scholarship.stud_roll_no = b.roll_no
 ```
 
 ![15 op 2](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/15op_2.png?raw=true)
 
-```
+```SQL
 Outer join - Get student details who didn't recieve scholarship
 
 SELECT * 
@@ -205,6 +223,8 @@ WHERE scholarship.stud_roll_no is NULL
 ```
 
 ![15 op 3](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/15op_3.png?raw=true)
+
+___
 
 
 >Mention the differences between the delete, drop and truncate commands
@@ -247,18 +267,22 @@ Note –
 Here we can’t restore the tuples of the table by using the “ROLLBACK” command.
 ```
 
+___
+
 > Get the count of the Scholarship category which is highly been availed by the students, i.e. get the count of the total number of students corresponding to the each scholarships category
 
-```
+```SQL
 SELECT s.category,COUNT(s.category) AS count
 FROM scholarship s
 GROUP BY s.category
 ```
 ![17 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/17op.png?raw=true)
 
+___
+
 >Along with the assignment no. 17 try to retrieve the maximum used scholarship category
 
-```
+```SQL
 SELECT
     cc.category,
     max(cc.count) as max_count
@@ -292,9 +316,11 @@ GROUP BY cc.category
 
 ![18 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/18op.png?raw=true)
 
+___
+
 >Retrieve the percentage of the students along with students detailed information who has scored the highest percentage along with availing the maximum scholarship amount
 
-```
+```SQL
 SELECT b.*,(s.percentage)
 FROM basic_info b 
 JOIN sub_info s on s.stud_roll_no = b.roll_no
@@ -314,6 +340,8 @@ WHERE b.roll_no IN
 ```
 
 ![19 op](https://github.com/ananth-sathvick/SAU-2021-Feb-Batch-1/blob/main/SQL_concepts_and_fundamentals-Evening/19op.png?raw=true)
+
+___
 
 
 >Difference between the Triggers, Stored Procedures, Views and Functions
@@ -408,3 +436,5 @@ ROUND()
 NOW()
 FORMAT()
 ```
+
+___
