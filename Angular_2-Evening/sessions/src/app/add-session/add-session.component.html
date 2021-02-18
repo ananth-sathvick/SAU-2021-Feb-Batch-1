@@ -1,0 +1,23 @@
+<div>
+    <form [formGroup]="sessionForm">
+        <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name">
+        </mat-form-field>
+
+        <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>Instructor</mat-label>
+            <input matInput formControlName="instructor">
+        </mat-form-field>
+
+        <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>Description</mat-label>
+            <input matInput formControlName="description">
+        </mat-form-field>
+
+        <button style="margin-bottom: 15px;" mat-raised-button color="primary" (click)="addToList()">Save</button>
+    </form>
+    <div>
+        {{ name.value }} | {{ instructor.value }} | {{ description.value }}
+    </div>
+</div>

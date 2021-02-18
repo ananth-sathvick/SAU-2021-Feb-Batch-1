@@ -1,0 +1,21 @@
+<hr>
+
+<!-- <div *ngFor="let session of sessionItems">
+
+   <button style="margin: 10px;" mat-button color="primary" (click)="updateSelected(session)">{{ session.title }}</button>
+</div> -->
+
+<mat-card style="margin: 10px; width: 300px;" *ngFor="let session of sessions">
+
+    <mat-card-title>{{session.name}}</mat-card-title>
+
+    <mat-card-content>{{session.instructor}}</mat-card-content>
+
+    <mat-card-content>{{session.description}}</mat-card-content>
+
+    <button style="margin-right: 10px;" mat-raised-button color="primary" (click)="editSession(session)">Edit Session</button>
+    <button mat-raised-button color="warn" (click)="deleteSession(session)">Delete Session</button>
+
+</mat-card>
+
+<button style="margin-left: 10px;" mat-raised-button color="accent" (click)="addSession()">Add Session</button>
