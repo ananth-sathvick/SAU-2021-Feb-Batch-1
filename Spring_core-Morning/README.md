@@ -8,11 +8,12 @@ Spring core and AOP assignment
    Add height and width also as properties in rectriangle class.
    Add spring configuration using JAVA BASED approach(Using java configuration class).
    
-   Bonus-Use individual objects and also try collections(List,set,map) of Obejcts for ex.
+   ```Bonus-Use individual objects and also try collections(List,set,map) of Obejcts for ex.
    @Bean
     public List<String> strList(){
         return Arrays.asList("pink", "red", "yellow");
     }
+    ```
 
 Output -
 
