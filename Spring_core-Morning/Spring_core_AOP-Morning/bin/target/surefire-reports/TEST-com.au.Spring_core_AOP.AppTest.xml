@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.au.Spring_core_AOP.AppTest" time="0.003" tests="0" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\hemas\eclipse-workspace\Spring_core_AOP\target\test-classes;C:\Users\hemas\eclipse-workspace\Spring_core_AOP\target\classes;C:\Users\hemas\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-core\5.3.0\spring-core-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-jcl\5.3.0\spring-jcl-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-beans\5.3.0\spring-beans-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-aspects\5.3.0\spring-aspects-5.3.0.jar;C:\Users\hemas\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-context\5.3.0\spring-context-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-aop\5.3.0\spring-aop-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-expression\5.3.0\spring-expression-5.3.0.jar;C:\Users\hemas\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\hemas\.m2\repository\asm\asm-all\3.3.1\asm-all-3.3.1.jar;C:\Users\hemas\.m2\repository\org\aspectj\aspectjrt\1.5.4\aspectjrt-1.5.4.jar;C:\Users\hemas\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\hemas\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15\bin"/>
+    <property name="sun.java.command" value="C:\Users\hemas\AppData\Local\Temp\surefire15624221494762506728\surefirebooter3424661495500498394.jar C:\Users\hemas\AppData\Local\Temp\surefire15624221494762506728 2021-03-01T11-15-49_808-jvmRun1 surefire365424600290714533tmp surefire_018154340430014126190tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\hemas\eclipse-workspace\Spring_core_AOP\target\test-classes;C:\Users\hemas\eclipse-workspace\Spring_core_AOP\target\classes;C:\Users\hemas\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-core\5.3.0\spring-core-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-jcl\5.3.0\spring-jcl-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-beans\5.3.0\spring-beans-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-aspects\5.3.0\spring-aspects-5.3.0.jar;C:\Users\hemas\.m2\repository\org\aspectj\aspectjweaver\1.9.6\aspectjweaver-1.9.6.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-context\5.3.0\spring-context-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-aop\5.3.0\spring-aop-5.3.0.jar;C:\Users\hemas\.m2\repository\org\springframework\spring-expression\5.3.0\spring-expression-5.3.0.jar;C:\Users\hemas\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\hemas\.m2\repository\asm\asm-all\3.3.1\asm-all-3.3.1.jar;C:\Users\hemas\.m2\repository\org\aspectj\aspectjrt\1.5.4\aspectjrt-1.5.4.jar;C:\Users\hemas\.m2\repository\cglib\cglib\3.3.0\cglib-3.3.0.jar;C:\Users\hemas\.m2\repository\org\ow2\asm\asm\7.1\asm-7.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\hemas"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-09-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\hemas\eclipse-workspace\Spring_core_AOP"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\hemas\AppData\Local\Temp\surefire15624221494762506728\surefirebooter3424661495500498394.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15+36-1562"/>
+    <property name="user.name" value="hemarao"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\hemas\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\hemas\AppData\Local\Temp\"/>
+    <property name="java.version" value="15"/>
+    <property name="user.dir" value="C:\Users\hemas\eclipse-workspace\Spring_core_AOP"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk-15/bin/server;C:/Program Files/Java/jdk-15/bin;c:\program files (x86)\common files\intel\shared libraries\redist\intel64_win\compiler;c:\program files (x86)\common files\oracle\java\javapath;c:\program files\common files\oracle\java\javapath;c:\progra~1\ptc\utilit~1\mkstoo~1\bin64;c:\progra~1\ptc\utilit~1\mkstoo~1\bin;c:\progra~1\ptc\utilit~1\mkstoo~1\bin\x11;c:\progra~1\ptc\utilit~1\mkstoo~1\mksnt;c:\program files (x86)\common files\intel\shared libraries\redist\intel64\compiler;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\nvidia corporation\nvidia nvdlisr;c:\program files (x86)\quicktime\qtsystem\;c:\program files\common files\autodesk shared\;c:\program files\microsoft sql server\120\tools\binn\;c:\program files\microsoft sql server\client sdk\odbc\110\tools\binn\;c:\program files (x86)\microsoft sql server\120\tools\binn\;c:\program files\microsoft sql server\120\dts\binn\;c:\program files (x86)\windows kits\8.1\windows performance toolkit\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;J:\anantha\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Users\hemas\AppData\Local\Microsoft\WindowsApps;;C:\Users\hemas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Windows\System32;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15+36-1562"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+</testsuite>
