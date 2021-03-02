@@ -183,5 +183,6 @@ To overcome this issue, override clone() method and throw an exception from clon
 <hr />
 
 4. Design classes for Builder Pattern. 
-![](4.jpg)
+
+![Design build pattern](4.jpg)
 
