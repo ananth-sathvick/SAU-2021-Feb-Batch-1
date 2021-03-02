@@ -72,6 +72,7 @@ public class SmartphoneFactory {
 2.  Write classes to provide Market Data and you know that you can switch to different vendors overtime like Reuters,
 wombat and maybe even to direct exchange feed , how do you design your Market Data system?
 
+![Observable design pattern](2.jpg)
 
 ```
 Observer Design Pattern used.
@@ -182,5 +183,5 @@ To overcome this issue, override clone() method and throw an exception from clon
 <hr />
 
 4. Design classes for Builder Pattern. 
-
+![](4.jpg)
 
