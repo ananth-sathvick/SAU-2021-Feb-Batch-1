@@ -48,7 +48,7 @@ Hibernate: insert into Category_Supplier (Categories_Id, supplier_Id) values (?,
 Hibernate: insert into Supplier_Category (Supplier_Id, categories_Id) values (?, ?)
 Hibernate: insert into Supplier_Category (Supplier_Id, categories_Id) values (?, ?)
 ```
-![1 op](1.jpg)
+![1 op](1.JPG)
 
 ## 2. Fix the problem in many to many for given example
 
@@ -82,7 +82,7 @@ Hibernate: insert into categories_items (Categories_catid, items_itemid) values 
 Hibernate: insert into categories_items (Categories_catid, items_itemid) values (?, ?)
 Many to Many using annotations done
 ```
-![1 op](1.jpg)
+![1 op](1.JPG)
 
 ## 3. Create an application for many to one other than sample example
 
@@ -97,4 +97,4 @@ Hibernate: insert into Customer (name, id) values (?, ?)
 Hibernate: update Bank_account set account_no=?, c_id=? where id=?
 Hibernate: update Bank_account set account_no=?, c_id=? where id=?
 ```
-![3 op](3.jpg)
+![3 op](3.JPG)
