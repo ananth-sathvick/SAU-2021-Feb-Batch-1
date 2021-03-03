@@ -83,4 +83,4 @@ Employee database
 6. Get Employee by id
 7. Exit
 ```
-![1 op](1.jpg)
+![1 op](1.JPG)
