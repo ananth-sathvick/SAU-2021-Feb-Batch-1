@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "e3e0e3ac-dff2-4cde-9596-b3d239277472",
+		"name": "Kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Library event ",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderEventId\":21,\r\n    \"order\":{\r\n        \"orderId\": 0,\r\n        \"orders\":[\"book1\",\"book2\",\"book3\"],\r\n        \"name\":\"authir\"\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/libraryEvent",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"libraryEvent"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
